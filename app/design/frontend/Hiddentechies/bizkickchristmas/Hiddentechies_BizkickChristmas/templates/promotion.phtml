@@ -1,0 +1,14 @@
+<?php
+$bizkickchristmasHelper = $this->helper('Hiddentechies\BizkickChristmas\Helper\Data');
+$enablePromotion = $bizkickchristmasHelper->getConfigValue('bizkickchristmassettings/promotion_settings/enable_promotion');
+$promotionText = $bizkickchristmasHelper->getConfigValue('bizkickchristmassettings/promotion_settings/promotion_text');
+?>
+<?php if ($enablePromotion == 1) { ?>
+    <?php if ($promotionText != '') { ?>
+        <div class="promotion-wrapper">
+            <div class="page-main">
+                <?php echo $promotionText; ?>
+            </div>
+        </div>
+    <?php } ?>
+<?php } ?>

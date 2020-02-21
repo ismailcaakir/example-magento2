@@ -1,0 +1,19 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+// @codingStandardsIgnoreFile
+?>
+<?php
+$helper = $this->helper('Hiddentechies\BizkickChristmas\Helper\Data');
+$customCss = $helper->getConfigValue('bizkickchristmassettings/customcss/custom_css');
+if ($customCss != '') {
+    ?>
+    <style>
+    <?php
+    echo $customCss;
+    ?>
+    </style>
+<?php }
+?>

@@ -1,0 +1,16 @@
+<div class="footer-links-column">
+    <div class="footer-colum-title">
+        <h3>
+            Subscribe
+        </h3>
+    </div>
+    <div class="footer-column-content">
+        <?php if ($showNewsletter) { ?>
+            <div class="footer-newsletter">
+                <div class="page-main">
+                    <?php echo $this->getChildHtml('form.subscribe'); ?>
+                </div>
+            </div>
+        <?php } ?>
+    </div>                                            
+</div>

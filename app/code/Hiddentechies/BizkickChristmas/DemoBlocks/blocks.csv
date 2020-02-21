@@ -1,0 +1,317 @@
+title,identifier,content,is_active,stores
+Payments Icons,payment-icons,"<span class=""payment-icons"">
+    <ul>
+        <li><a href=""#""><img class=""image-responsive middle-block"" src=""{{media url=""wysiwyg/paymet/americanexpress.png""}}"" alt=""americanexpress"" /></a></li>
+        <li><a href=""#""><img class=""image-responsive middle-block"" src=""{{media url=""wysiwyg/paymet/discover.png""}}"" alt=""discover"" /></a></li>
+        <li><a href=""#""><img class=""image-responsive middle-block"" src=""{{media url=""wysiwyg/paymet/maestro.png""}}"" alt=""maestro"" /></a></li>
+        <li><a href=""#""><img class=""image-responsive middle-block"" src=""{{media url=""wysiwyg/paymet/master.png""}}"" alt=""master"" /></a></li>
+        <li><a href=""#""><img class=""image-responsive middle-block"" src=""{{media url=""wysiwyg/paymet/visa.png""}}"" alt=""visa"" /></a></li>
+    </ul>
+</span>",1,0
+Home Slider,home-slider,"<div class=""home-slider-wrapper"">
+    <div class=""home-slider-main below-padding"">
+        <ul class=""home-slider"">
+            <li>
+                <a href=""#""><img class=""image-responsive middle-block"" src=""{{media url=""wysiwyg/slider/bizkickchristmas-home-banner-1.png""}}"" alt=""home banner"" /> </a>
+            </li>
+            <li style=""display:none;"">
+                <a href=""#""><img class=""image-responsive middle-block"" src=""{{media url=""wysiwyg/slider/bizkickchristmas-home-banner-2.png""}}"" alt=""home banner"" /> </a>
+            </li>
+            <li style=""display:none;"">
+                <a href=""#""><img class=""image-responsive middle-block"" src=""{{media url=""wysiwyg/slider/bizkickchristmas-home-banner-3.png""}}"" alt=""home banner"" /> </a>
+            </li>
+        </ul>
+    </div>
+    <script type=""text/javascript"">
+        require(['jquery', 'bizkickchristmasowlcarousel'], function() {
+            jQuery(document).ready(function() {
+                jQuery("".home-slider"").owlCarousel({
+                    items: 1,
+                    itemsDesktop: [1198, 1],
+                    itemsDesktopSmall: [1023, 1],
+                    itemsTablet: [768, 1],
+                    itemsTabletSmall: [767, 1],
+                    itemsMobile: [479, 1],
+                    pagination: true,
+                    navigationText: [""<div class='left-arrow'><i class='fa fa-angle-left'></i></div>"", ""<div class='right-arrow'><i class='fa fa-angle-right'></div>""],
+                    navigation: true,
+                });
+                jQuery("".home-slider li"").show();
+            });
+        });
+    </script>
+</div>",1,0
+BizkickChristmas Above,bizkickchristmas-above,"{{widget type=""Magento\Cms\Block\Widget\Block"" template=""widget/static_block/default.phtml"" block_id=""home-slider""}}",1,0
+Home Images Block,home-images-one,"<div class=""home-images-wrapper above-padding below-padding"">
+<div class=""page-main"">
+<div class=""home-image-main"">
+<div class=""home-image-inner left""><a href=""#""> <img class=""image-responsive middle-block"" src=""{{media url=&quot;wysiwyg/advertisement/adv-image-1.png&quot;}}"" alt=""adv-image""> </a></div>
+<div class=""home-image-inner right""><a href=""#""> <img class=""image-responsive middle-block"" src=""{{media url=&quot;wysiwyg/advertisement/adv-image-2.png&quot;}}"" alt=""adv-image""> </a></div>
+</div>
+</div>
+</div>",1,0
+BizkickChristmas Below,bizkickchristmas-below,"{{widget type=""Magento\Cms\Block\Widget\Block"" template=""widget/static_block/default.phtml"" block_id=""home-images-one""}}
+<div class=""page-main"">
+{{widget type=""Magento\Catalog\Block\Product\Widget\NewWidget"" display_type=""all_products"" show_pager=""0"" products_count=""10"" template=""product/widget/new/content/new_grid.phtml""}}
+</div>
+{{widget type=""Magento\Cms\Block\Widget\Block"" template=""widget/static_block/default.phtml"" block_id=""home-images-two""}}
+<div class=""page-main"">
+    {{widget type=""Magento\CatalogWidget\Block\Product\ProductsList"" title=""Featured Products"" show_pager=""0"" products_count=""10"" template=""product/widget/content/grid.phtml"" conditions_encoded=""^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`is_featured`,`operator`:`==`,`value`:`1`^]^]""}}    
+</div>
+{{widget type=""Magento\Cms\Block\Widget\Block"" template=""widget/static_block/default.phtml"" block_id=""home_testimonials""}}
+{{widget type=""Magento\Cms\Block\Widget\Block"" template=""widget/static_block/default.phtml"" block_id=""home_blogs""}}
+{{widget type=""Magento\Cms\Block\Widget\Block"" template=""widget/static_block/default.phtml"" block_id=""home-brands""}}",1,0
+Home Testimonials,home_testimonials,"<div class=""hb-wrapper above-margin below-margin"">
+    <div class=""page-main"">
+        <div class=""hb-row"">
+            <div class=""hb-testimonoals"">
+                <ul id=""hb-testimonials"">
+                    <li style=""display: none;"">
+                        <div class=""hb-inner"">
+                            <div class=""hb-image"">
+                                <img src=""{{media url=""wysiwyg/testimonial/testimonial-1.png""}}"" alt=""testimonial-image"" />
+                            </div>
+                            <div class=""hb-content"">
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae abillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                <span>
+                                    <em class=""fa fa-quote-right quote-icon"" aria-hidden=""true""></em>
+                                    <h4>Alina Doe</h4>
+                                    <p>Web Designer</p>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li style=""display: none;"">
+                        <div class=""hb-inner"">
+                            <div class=""hb-image"">
+                                <img src=""{{media url=""wysiwyg/testimonial/testimonial-2.png""}}"" alt=""testimonial-image"" />
+                            </div>
+                            <div class=""hb-content"">
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae abillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                <span>
+                                    <em class=""fa fa-quote-right quote-icon"" aria-hidden=""true""></em>
+                                    <h4>Jhon Doe</h4>
+                                    <p>Web Designer</p>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <script type=""text/javascript"" xml=""space"">
+                    require(['jquery', 'bizkickchristmasowlcarousel'], function() {
+                        jQuery(document).ready(function() {
+                            jQuery(""#hb-testimonials"").owlCarousel({
+                                items: 1,
+                                itemsDesktop: [1198, 1],
+                                itemsDesktopSmall: [1023, 1],
+                                itemsTablet: [768, 1],
+                                itemsTabletSmall: [767, 1],
+                                itemsMobile: [479, 1],
+                                pagination: true,
+                                navigationText: [""<div class='left-arrow'><i class='fa fa-angle-left'></i></div>"", ""<div class='right-arrow'><i class='fa fa-angle-right'></div>""],
+                                navigation: false,
+                            });
+                            jQuery(""#hb-testimonials li"").show();
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</div>",1,0
+Home Brands,home-brands,"<div class=""brands-wrapper above-padding below-padding"">
+    <div class=""page-main"">
+        <div class=""brands-main"">
+            <ul class=""brands-slider"">
+                <li style=""display: none;""><a href=""#""><img src=""{{media url=""wysiwyg/brand/brand-1.png""}}"" alt=""brand-image"" /></a></li>
+                <li style=""display: none;""><a href=""#""><img src=""{{media url=""wysiwyg/brand/brand-2.png""}}"" alt=""brand-image"" /></a></li>
+                <li style=""display: none;""><a href=""#""><img src=""{{media url=""wysiwyg/brand/brand-3.png""}}"" alt=""brand-image"" /></a></li>
+                <li style=""display: none;""><a href=""#""><img src=""{{media url=""wysiwyg/brand/brand-4.png""}}"" alt=""brand-image"" /></a></li>
+                <li style=""display: none;""><a href=""#""><img src=""{{media url=""wysiwyg/brand/brand-5.png""}}"" alt=""brand-image"" /></a></li>
+                <li style=""display: none;""><a href=""#""><img src=""{{media url=""wysiwyg/brand/brand-6.png""}}"" alt=""brand-image"" /></a></li>
+                <li style=""display: none;""><a href=""#""><img src=""{{media url=""wysiwyg/brand/brand-7.png""}}"" alt=""brand-image"" /></a></li>
+                <li style=""display: none;""><a href=""#""><img src=""{{media url=""wysiwyg/brand/brand-8.png""}}"" alt=""brand-image"" /></a></li>
+            </ul>
+            <script type=""text/javascript"" xml=""space"">
+                require(['jquery', 'bizkickchristmasowlcarousel'], function() {
+                    jQuery(document).ready(function() {
+                        jQuery("".brands-slider"").owlCarousel({
+                            items: 6,
+                            itemsDesktop: [1198, 5],
+                            itemsDesktopSmall: [1023, 5],
+                            itemsTablet: [768, 4],
+                            itemsTabletSmall: [767, 4],
+                            itemsMobile: [479, 2],
+                            pagination: false,
+                            navigationText: [""<div class='left-arrow'><i class='fa fa-angle-left'></i></div>"", ""<div class='right-arrow'><i class='fa fa-angle-right'></div>""],
+                            navigation: false,
+                        });
+                        jQuery("".brands-slider li"").show();
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</div>",1,0
+Footer My Account Block,footer_myaccount,"<div class=""footer-colum-title"">
+                                    <h3>
+                                        My Account
+                                    </h3>
+                                </div>
+                                <div class=""footer-column-content"">
+<ul class=""footer links"">
+<li class=""nav item""><a href=""#"">My Account</a></li>
+<li class=""nav item""><a href=""#"">Login</a></li>
+<li class=""nav item""><a href=""#"">My Cart</a></li>
+<li class=""nav item""><a href=""#"">My Compare</a></li>
+<li class=""nav item""><a href=""#"">My Wishlist</a></li>
+</ul>
+</div>",1,0
+Footer Payment & Shipping,footer_payment_shipping,"<div class=""footer-colum-title"">
+                            <h3>
+                                Payment & Shipping
+                            </h3>
+                        </div>
+                        <div class=""footer-column-content"">
+<ul class=""footer links"">
+<li class=""nav item""><a href=""#"">Terms of Use</a></li>
+<li class=""nav item""><a href=""#"">Payment Methods</a></li>
+<li class=""nav item""><a href=""#"">Shipping Guide</a></li>
+<li class=""nav item""><a href=""#"">Order Tracking</a></li>
+<li class=""nav item""><a href=""#"">Return % Exchange</a></li>
+</ul>
+</div>",1,0
+Home Blogs,home_blogs,"<div class=""hb-wrapper above-padding below-padding"" style=""background: #ffffff;"">
+ <div class=""page-main"">
+  <div class=""page-title-main""><strong>Latest Posts</strong></div>
+  <div class=""hb-row"">
+   <div class=""hb-blog"">
+    <ul id=""hb-blogs"">
+     <li style=""display:none;"">
+      <div class=""hb-inner"">
+       <div class=""hb-img""><img src=""{{media url=""wysiwyg/blog/bizkickchristmas-blog-1.png""}}"" alt=""blog-image"" /></div>
+       <div class=""hb-content"">
+        <h3>Lorem ipsum is dolor sit amet.</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <span> 25 Jul 2020 </span>
+       </div>
+      </div>
+     </li>
+     <li style=""display:none;"">
+      <div class=""hb-inner"">
+       <div class=""hb-img""><img src=""{{media url=""wysiwyg/blog/bizkickchristmas-blog-2.png""}}"" alt=""blog-image"" /></div>
+       <div class=""hb-content"">
+        <h3>Lorem ipsum is dolor sit amet.</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <span> 25 Jul 2020 </span>
+       </div>
+      </div>
+     </li>
+     <li style=""display:none;"">
+      <div class=""hb-inner"">
+       <div class=""hb-img""><img src=""{{media url=""wysiwyg/blog/bizkickchristmas-blog-3.png""}}"" alt=""blog-image"" /></div>
+       <div class=""hb-content"">
+        <h3>Lorem ipsum is dolor sit amet.</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <span> 25 Jul 2020 </span>
+       </div>
+      </div>
+     </li>
+    </ul>
+    <script type=""text/javascript"" xml=""space"">
+     require(['jquery', 'bizkickchristmasowlcarousel'], function() {
+      jQuery(document).ready(function() {
+       jQuery(""#hb-blogs"").owlCarousel({
+        items: 2,
+        itemsDesktop: [1198, 2],
+        itemsDesktopSmall: [1023, 2],
+        itemsTablet: [768, 1],
+        itemsTabletSmall: [767, 1],
+        itemsMobile: [479, 1],
+        pagination: false,
+        navigationText: [""<div class='left-arrow'><i class='fa fa-angle-left'></i></div>"", ""<div class='right-arrow'><i class='fa fa-angle-right'></div>""],
+        navigation: true,
+       });
+       jQuery(""#hb-blogs li"").show();
+      });
+     });
+    </script>
+   </div>
+  </div>
+ </div>
+</div>",1,0
+Footer Socials Block,footer-socials,"<div class=""socials-block"">
+            <a href=""#""><em class=""fa fa-facebook""></em></a>
+            <a href=""#""><em class=""fa fa-twitter""></em></a>
+            <a href=""#""><em class=""fa fa-linkedin""></em></a>
+            <a href=""#""><em class=""fa fa-vimeo""></em></a>
+            <a href=""#""><em class=""fa fa-google""></em></a>
+        </div>",1,0
+Home Images Block,home-images-two,"<div class=""home-parallax-block above-margin below-margin"">
+ <p>ONLY THIS MONTH</p>
+ <h1>Save Upto 45% Off</h1>
+ <span>Offer for first 25 orders on all halloween products</span>
+ <a class=""action primary"" href=""https://demo.hiddentechies.com/bizkickchristmas/electronics.html"" target=""_blank"">Shop Now</a>
+</div>",1,0
+Home Services Block,home-services,"<div class=""home-advantage-block"">
+    <div class=""page-main"">
+        <div class=""hab-row"">
+            <div class=""hab-inner"">
+                <div class=""home-advantage-block-inner"">
+                    <span> 
+                        <em class=""fa fa-usd""></em> 
+                    </span>
+                    <p>30-Day Money Back</p>
+                </div>
+            </div>
+            <div class=""hab-inner"">
+                <div class=""home-advantage-block-inner"">
+                    <span> 
+                        <em class=""fa fa-headphones""></em> 
+                    </span>
+                    <p>1 year Free Support</p>
+                </div>
+            </div>
+            <div class=""hab-inner"">
+                <div class=""home-advantage-block-inner"">
+                    <span> 
+                        <em class=""fa fa-undo""></em> 
+                    </span>
+                    <p>Free Lifetime Update</p>
+                </div>
+            </div>
+            <div class=""hab-inner"">
+                <div class=""home-advantage-block-inner"">
+                    <span> 
+                        <em class=""fa fa-thumbs-up""></em> 
+                    </span>
+                    <p>100% Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>",1,0
+Home Single Images Block,home-single-images-block,"<div class=""home-images-wrapper above-padding below-padding"">
+<div class=""page-main"">
+<div class=""home-image-main"">
+<div class=""home-image-inner""><a href=""#""> <img class=""image-responsive middle-block"" src=""{{media url=""wysiwyg/advertisement/advt-block2.png""}}"" alt=""bizkickchristmas-fashion-image"" /> </a></div>
+</div>
+</div>
+</div>",1,0
+Sidebar add banner,sidebar-add-banner,"<img src=""{{media url=""wysiwyg/advertisement/sidebar-banner.png""}}"" alt="""" />",1,0
+Footer Quicklinks Block,footer_quicklinks,"<div class=""footer-colum-title"">
+<h3>Quick Links</h3>
+</div>
+<div class=""footer-column-content"">
+<ul class=""footer links"">
+<li class=""nav item""><a href=""{{store url='privacy-policy-cookie-restriction-mode'}}""> Privacy and Cookie Policy </a></li>
+<li class=""nav item""><a href=""{{store url='search/term/popular'}}""> Search Terms </a></li>
+<li class=""nav item""><a href=""{{store url='contact'}}""> Contact Us </a></li>
+<li class=""nav item""><a href=""{{store url='sales/guest/form'}}""> Orders and Returns </a></li>
+<li class=""nav item""><a href=""{{store url='catalogsearch/advanced'}}"" data-action=""advanced-search""> Advanced Search </a></li>
+</ul>
+</div>",,
+Home ContactUs Block,home-contactus-block,"<div class=""header-content-info"">
+<span class=""contact-text""> Contact Us <strong> <a href=""tel:+123456789"">+1234567890</a> </strong>
+</span>
+</div>",1,0

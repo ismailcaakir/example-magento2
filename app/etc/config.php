@@ -254,6 +254,8 @@ return [
         'Amazon_Payment' => 1,
         'Dotdigitalgroup_Email' => 1,
         'Dotdigitalgroup_Chat' => 1,
+        'Hiddentechies_Base' => 1,
+        'Hiddentechies_BizkickChristmas' => 1,
         'Klarna_Core' => 1,
         'Klarna_Ordermanagement' => 1,
         'Klarna_Kp' => 1,

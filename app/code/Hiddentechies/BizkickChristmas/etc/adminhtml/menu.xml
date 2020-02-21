@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Hiddentechies_BizkickChristmas::bizkickchristmas" title="BizkickChristmas" module="Hiddentechies_BizkickChristmas" sortOrder="65" resource="Hiddentechies_BizkickChristmas::bizkickchristmas"/>
+        <add id="Hiddentechies_BizkickChristmas::bizkickchristmassettings" title="Configuration" module="Hiddentechies_BizkickChristmas" sortOrder="20" parent="Hiddentechies_BizkickChristmas::bizkickchristmas" action="adminhtml/system_config/edit/section/bizkickchristmassettings" resource="Hiddentechies_BizkickChristmas::bizkickchristmas"/>
+    </menu>
+</config>

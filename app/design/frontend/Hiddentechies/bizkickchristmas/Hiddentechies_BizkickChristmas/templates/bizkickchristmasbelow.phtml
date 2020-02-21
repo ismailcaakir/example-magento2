@@ -1,0 +1,7 @@
+<?php
+$helper = $this->helper('Hiddentechies\BizkickChristmas\Helper\Data');
+$ishome = $helper->getIsHome();
+if ($ishome) {
+    echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('bizkickchristmas-below')->toHtml();
+}
+?>
